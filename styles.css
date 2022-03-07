@@ -35,3 +35,15 @@ img{
   flex-direction: column;
   justify-content: center;
 }
+.hero img{
+  width: 100%;
+  height: 100%;
+}
+.headshot{
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 1s;
+}
+.headshot:hover{
+  transform: rotate(360deg);
+}

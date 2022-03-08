@@ -25,6 +25,16 @@ h1{
   line-height: 50px;
   font-weight: bold;
 }
+p sub{
+  color: #aaa;
+  vertical-align: baseline;
+}
+p sub:before{
+  content: "[";
+}
+p sub:after{
+  content: "]"
+}
 img{
   border-radius: 50%;
 }

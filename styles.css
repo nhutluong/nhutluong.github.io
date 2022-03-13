@@ -57,6 +57,10 @@ section{
   margin: 0 auto;
 }
 
+address{
+  white-space: pre-line;
+  margin-top: 0px;
+}
 .hero{
   outline: 1px solid red;
   height: 100vh;

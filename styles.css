@@ -130,6 +130,7 @@ address{
   .blocklist > li{
     display: block;
     text-align: center !important;
+    border-width: 0;
     margin:50px 0;
   }
 }

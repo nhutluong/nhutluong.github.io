@@ -19,6 +19,7 @@ html, body{
 }
 body{
   text-align: center;
+  overflow-x:hidden;
 }
 h1{
   font-size: 36px;
@@ -52,7 +53,7 @@ img{
 
 section{
   border-top: 2px dashed #eee;
-  padding: 50px 0;
+  padding: 50px 10px;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -75,6 +76,7 @@ address{
 .hero{
   outline: 1px solid red;
   height: 100vh;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,6 +126,13 @@ address{
   flex-direction: row-row-reverse;
   text-align: right;
 }
+@media (max-width: 500px) {
+  .blocklist > li{
+    display: block;
+    text-align: center !important;
+    margin:50px 0;
+  }
+}
 .prose{
   test-align: justify;
   max-width: 500px;
@@ -137,6 +146,7 @@ address{
   width: 100%;
   display: flex;
   position: fixed;
+  z-index: 9999;
 }
 .nav li{
   list-style-type: none;

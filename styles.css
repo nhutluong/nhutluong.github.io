@@ -74,7 +74,7 @@ address{
   margin-top: 0px;
 }
 .hero{
-  outline: 1px solid red;
+  
   height: 100vh;
   min-height: 500px;
   display: flex;

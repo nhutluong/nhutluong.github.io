@@ -8,18 +8,56 @@
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!--Load icon library for side bar -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <meta name="viewport" content="width=device-width,"
     initial-scale=1"/>
-
   </head>
   <body>
-
     <div class="navbar">
       <a class="active" href="#portfolio"><i class="fa fa-fw fa-globe"></i>Projects</a>
       <a href="#bio"><i class="fa fa-fw fa-podcast"></i>Bio</a>
       <a href="#contact"><i class="fa fa-fw fa-envelope"></i>Contact Info</a>
     </div>
 
+    <div id="main">
+    <div id="customSidebar" class="sidebar"
+    onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+      <a href="#"><i class="material-icons">spa</i><span class="icon-text"></span>side story</a>
+      <p>Welcome to my first webpage. It is writtin with HTML and styled with CSS and
+        just one simple function of javascript. It is basic and not filled with projects,
+        links, and creative art. But what it does contain are <b>words</b>.<b>Words</b> are powerful.
+        It is mainly why you are reading my short side story. Words convey emotion.
+        It creates languages. My language will invoke emotions. It will be a visualizer
+        to thoughtfulness. This webpage is made up of mostly words. Creation starts with ideas.
+        Ideas eventually form into words and that should be the starting point. Creation should
+        be formed around words and not an after thought. So the next time you create challenge
+        yourself to convey <b>your words</b> thoroughly. In a world more connected than ever before
+        yet feels more disconnected than ever before I strive to create with <b>words</b>.
+        Thank you,
+        Peace and Love
+        </p>
+    </div>
+
+    <!--javascript to add hover function to sidebar-->
+    <script>
+    var mini = true;
+    function toggleSidebar(){
+      if(mini){
+        console.log("opening sidebar");
+        document.getElementById("customSidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        this.mini = false;
+      }else{
+        console.log("closing sidebar");
+        document.getElementById("customSidebar").style.width = "85px";
+        document.getElementById("main").style.marginLeft = "85px";
+        this.mini = true;
+      }
+    }
+    </script>
 
     <section class="hero">
       <header>
@@ -77,5 +115,6 @@
         </address>
         <p>Let us be friends. Send me an email to say hello.</p>
     </section>
+  </div>
   </body>
 </html>

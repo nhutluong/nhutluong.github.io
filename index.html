@@ -26,18 +26,18 @@
     <div id="customSidebar" class="sidebar"
     onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
       <a href="#"><i class="material-icons">spa</i><span class="icon-text"></span>side story</a>
-      <p>Welcome to my first webpage. It is writtin with HTML and styled with CSS and
-        just one simple function of javascript. It is basic and not filled with projects,
-        links, and creative art. But what it does contain are <b>words</b>.<b>Words</b> are powerful.
-        It is mainly why you are reading my short side story. Words convey emotion.
-        It creates languages. My language will invoke emotions. It will be a visualizer
-        to thoughtfulness. This webpage is made up of mostly words. Creation starts with ideas.
-        Ideas eventually form into words and that should be the starting point. Creation should
-        be formed around words and not an after thought. So the next time you create challenge
-        yourself to convey <b>your words</b> thoroughly. In a world more connected than ever before
-        yet feels more disconnected than ever before I strive to create with <b>words</b>.
-        Thank you,
-        Peace and Love
+      <p align=left>Welcome to my first webpage. It is writtin with HTML and styled with <br>CSS and
+        just one simple function of javascript. It is basic and not filled <br>with projects,
+        links, and creative art. But what it does contain are <br><b>words</b>.<b>Words</b> are powerful.
+        It is mainly why you are reading my short <br>side story. Words convey emotion.
+        It creates languages. My language <br>will invoke emotions. It will be a visualizer
+        to thoughtfulness. This <br>webpage is made up of mostly words. Creation starts with ideas.
+        <br>Ideas eventually form into words and that should be the starting point. <br>Creation should
+        be formed around words and not an after thought. <br>So the next time you create challenge
+        yourself to convey <b>your words</b> <br>thoroughly. In a world more connected than ever before
+        yet feels more <br>disconnected than ever before I strive to create with <b>words</b>.
+        <br>Thank you,
+        <br>Peace and Love
         </p>
     </div>
 
@@ -47,13 +47,13 @@
     function toggleSidebar(){
       if(mini){
         console.log("opening sidebar");
-        document.getElementById("customSidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
+        document.getElementById("customSidebar").style.width = "500px";
+        document.getElementById("main").style.marginLeft = "500px";
         this.mini = false;
       }else{
         console.log("closing sidebar");
-        document.getElementById("customSidebar").style.width = "85px";
-        document.getElementById("main").style.marginLeft = "85px";
+        document.getElementById("customSidebar").style.width = "80px";
+        document.getElementById("main").style.marginLeft = "80px";
         this.mini = true;
       }
     }
